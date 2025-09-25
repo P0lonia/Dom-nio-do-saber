@@ -1,0 +1,79 @@
+---
+import Container from "../components/Container.astro";
+---
+
+<header>
+    <Container maxWidth="1100px" >
+        <div>
+            <img src="/images/logo/logoDominioDoSaber.jpeg" alt="Logo do Domínio do Saber">
+            <h1><strong>Domínio</strong> do saber</h1>
+        </div>
+
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="">Blog</a>
+            </li>
+            <li>
+                <a href="">Contato</a>
+            </li>
+        </ul>
+    </Container>
+</header>
+
+<style>
+    header {
+        color: rgb(23, 36, 48);
+        background-color: rgb(255, 255, 255);
+        padding: 12px;
+        box-shadow: rgba(0, 0, 0, 0.315) 0px 4px 8px;
+
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+    }
+
+    strong {
+        color: rgb(21, 69, 131);
+    }
+    
+    ul li{
+        display: inline;
+    }
+
+    a {
+        color: rgb(23, 36, 48);
+        padding: 4px;
+    }
+    a:hover {
+        color: rgb(21, 69, 131);
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 14px;
+        }
+        ul li {
+            font-size: 12px;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            margin-right: 8px;
+        }
+    }
+</style>

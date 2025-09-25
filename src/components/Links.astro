@@ -1,0 +1,27 @@
+<a href="">
+    <slot />
+</a>
+
+
+<style>
+    a {
+        color: white;
+        padding: 12px;
+        background-color: rgb(255, 115, 0);
+        border-radius: 16px;
+        box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 2px;
+    }
+    
+    a:hover {
+        scale: 1.02;
+        background-color: rgb(224, 103, 3);
+    }
+
+    @media (max-width: 768px) {
+        a {
+            padding: 12px;
+            white-space: nowrap;
+            
+        }
+    }
+</style>

@@ -1,0 +1,46 @@
+---
+import Links from "../components/Links.astro"
+---
+
+<div>
+    <h2>
+        Veja o melhor conteúdo da web para seu crescimento pessoal e profissional!
+    </h2>
+    <Links href="">
+        Saiba mais
+    </Links>
+</div>
+
+
+
+<style>
+    div {
+        height: 70vh;
+        width: 100%;
+        background: linear-gradient(to right,
+        rgba(0,0,0,0.5) 10%, 
+        rgba(0, 0, 0, 0.5) 35%, 
+        rgba(0,0,0,0.5) 50%, 
+        rgba(0,0,0,0.5) 100%), url('/images/hero2.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+</style>

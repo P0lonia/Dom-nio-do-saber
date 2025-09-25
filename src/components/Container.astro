@@ -1,0 +1,13 @@
+---
+const { children, maxWidth = '1200px', justify = 'space-between', align = 'center', display = 'flex'} = Astro.props;
+---
+
+<div class="container" style={`max-width: ${maxWidth}; display: ${display}; align-items: ${align}; justify-content: ${justify};`}>
+    <slot />
+</div>
+
+<style>
+    .container {
+        margin: 0 auto;
+    }
+</style>
