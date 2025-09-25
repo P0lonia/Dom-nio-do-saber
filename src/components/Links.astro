@@ -1,4 +1,9 @@
-<a href="">
+---
+const { children, link = ''} = Astro.props;
+---
+
+
+<a href={`${link}`}>
     <slot />
 </a>
 
