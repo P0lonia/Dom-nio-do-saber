@@ -1,23 +1,30 @@
 ---
 import Container from "./Container.astro";
 
-const { children, link = '', foto = '', titulo = '' } = Astro.props;
+const { children, link, foto, titulo, descricaoImg, descricao, date} = Astro.props;
 ---
 
 <Container justify="center">
-    <div>
-        <a href={`${link}`}>
-            <img src=`${foto}` alt="">
-            <h3>{titulo}</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias maiores placeat voluptatem ducimus at qui minima laborum alias, fugiat cum nemo, cupiditate accusamus id, eos impedit ipsum! Consectetur, rerum at.
-            </p>
-        </a>
-    </div>
+    <article>
+        <header>
+            <figure>
+                <a href={link}>
+                    <img src={foto} alt={descricaoImg}>
+                </a>
+            </figure>
+            <a href={link}>
+                <h2>{titulo}</h2>
+            </a>
+            <time datetime={date}>{date}</time>
+        </header>
+        <p>
+            {descricao}
+        </p>
+    </article>
 </Container>
 
 <style>
-    div {
+    article {
         padding: 8px;
         background-color: white;
         text-align: center;
@@ -28,11 +35,18 @@ const { children, link = '', foto = '', titulo = '' } = Astro.props;
         transition: linear 0.3s;
     }
 
-    a {
+    header a {
         color: rgb(23, 36, 48);
     }
 
-    h3 {
+    time {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.5);
+        
+    }
+
+    h2 {
+        font-size: 20px;
         margin: 8px 0 0 0;
     }
 
@@ -41,23 +55,33 @@ const { children, link = '', foto = '', titulo = '' } = Astro.props;
         padding: 8px;
     }
 
-    a img {
+    figure {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    figure img {
         width: 100%;
         max-height: 216px;
         border-radius: 8px;
         object-fit: cover;
+        transition: ease-in 1s;
     }
 
-    div:hover {
+    figure img:hover{
+        scale: 1.1;
+    }
+
+    article:hover {
         box-shadow: rgba(0, 0, 0, 0.315) 0px 16px 28px;
     }
 
-    a:hover {
+    header a:hover {
         color: rgb(21, 69, 131);
     }
 
     @media (max-width: 768px) {
-        div {
+        article {
             width: 90vw;
         }
     }
