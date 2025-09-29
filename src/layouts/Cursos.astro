@@ -1,0 +1,249 @@
+<section>
+    <h2>
+        O que nós ensinamos
+    </h2>
+    <div class="grid">
+        <div class="blog-card spring-fever bg-image-leitura">
+            <div class="title-content">
+                <h3><a href="#">Leitura Dinâmica</a></h3>
+                <div class="intro"> <a href="#">Inspiration</a> </div>
+            </div>
+            <div class="card-info">
+                🚀 Acelere sua leitura, multiplique seu aprendizado!
+                Com nosso Curso de Leitura Dinâmica, você vai ler até 3x mais rápido, sem perder a compreensão e com muito mais foco. 📚✨
+                <a href="#">Ver Curso</a>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+        </div><!-- /.blog-card -->
+            <div class="blog-card spring-fever bg-image-memorizacao">
+                <div class="title-content">
+                    <h3><a href="#">Memorização</a></h3>
+                    <div class="intro"> <a href="#">Inspiration</a> </div>
+                </div>
+                <div class="card-info">
+                    🧠 Turbine sua memória e retenha muito mais!
+                    Com o Curso de Memorização, você aprende técnicas práticas para lembrar informações com facilidade e rapidez. 🚀📚
+                    <a href="#">Ver Curso</a>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+            <div class="blog-card spring-fever bg-image--tecnica">
+                <div class="title-content">
+                    <h3><a href="#">Técnicas de Estudo</a></h3>
+                    <div class="intro"> <a href="#">Inspiration</a> </div>
+                </div>
+                <div class="card-info">
+                    📚 Estude menos, aprenda mais!
+                    No Curso de Técnicas de Estudo, você descobre métodos comprovados para organizar, focar e absorver conteúdos de forma muito mais eficiente. 🚀✨
+                    <a href="#">Ver Curso</a>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+        </div>
+
+
+    <style>
+        section {
+            margin: 64px 0;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 28px;
+            color: rgb(21, 69, 131);
+            font-family: "SUSE Mono", sans-serif;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 22px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .blog-card {
+            max-width: 550px;
+            width:100%;
+            height: 500px;
+            position: relative;
+            color:#fff;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 0px;
+            box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition:all 0.4s;
+            border-radius: 16px;
+        }
+        .bg-image-leitura {
+            background: url(/images/cursos/leitura-dinamica.jpeg) center no-repeat;
+            background-size: 100%;
+            background-size: cover;
+        }
+        .bg-image-memorizacao {
+            background: url(/images/cursos/memorizacao.jpg) center no-repeat;
+            background-size: 100%;
+            background-size: cover;
+        }
+        .bg-image--tecnica {
+            background: url(/images/cursos/organizacao.jpeg) center no-repeat;
+            background-size: 100%;
+            background-size: cover;
+        }
+        .blog-card a{ 
+            color:#fff;
+            transition:all 0.2s
+        }
+        .blog-card .color-overlay {
+        background: rgba(41, 52, 58, 0.5);
+        width: 550px;
+        height: 500px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+        }
+        .blog-card .gradient-overlay {  
+        background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+        width: 550px;
+        height: 500px;
+        position: absolute;
+        top: 350px;
+        left: 0;
+        z-index: 15;
+        }
+        .blog-card:hover{
+            box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+        }
+        .blog-card:hover .card-info {
+        opacity: 1;
+        bottom: 100px;
+        }
+        .blog-card:hover .color-overlay {
+        background: rgba(64, 64, 70,0.8);
+        }
+        .blog-card:hover .title-content{
+        margin-top:70px
+        }
+        .title-content {
+        text-align: center;
+        margin: 170px 0 0 0;
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition:all 0.6s
+        }
+        .blog-card:hover h3:after{
+        
+        animation: changeLetter 0.3s 1 linear;
+        width:80%
+        }
+
+        .blog-card h3,h1 {
+        font-size: 1.9em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-family: 'Abril Fatface', serif;
+        margin-bottom: 0;
+        display:inline-block;
+        }
+        .blog-card h3 a{  
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+        transition:all 0.2s
+        }
+        .blog-card h3 a:hover{
+        text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
+        }
+        h3:after {
+        content: " ";
+        display: block; 
+        width: 10%;
+        height: 2px;
+        margin: 20px auto;
+        border: 0;
+        background: rgb(173, 82, 8);
+        transition:all 0.2s
+        }
+
+        @keyframes changeLetter {
+        0% {
+            width: 10%;
+        }
+        100% {
+            width: 80%;
+        }
+        }
+
+        .intro {
+        width: 170px;
+        margin: 0 auto;
+        color: #ddd;
+        font-style: italic;
+        line-height: 18px;
+        }
+        .intro a{
+        color: #ddd
+        }
+        .intro a:hover{
+        text-decoration:underline
+        }
+        .card-info {
+        box-sizing: border-box;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        margin: 0 auto;
+        padding: 0 50px;
+        font-style: 16px;
+        line-height: 24px;
+        z-index: 20;
+        opacity: 0;
+        transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+        }
+
+        .card-info a{
+        display:block;
+        width:100px;
+        margin:15px auto;
+        background-color: rgb(255, 115, 0);
+        color:#ffffff;
+        padding:3px 10px;
+        border-radius: 8px;
+        font-size:0.8em
+        }
+        .card-info a:hover{
+        background-color: rgb(160, 82, 18);
+            scale: 1.02;
+        }
+        .card-info a:hover span{
+        filter: brightness(10);
+        opacity:1
+        }
+
+    @media (max-width: 768px) {
+        section {
+            margin: 0;
+            padding: 2.8vw;
+        }
+        section h2 {
+            font-size: 22px;
+        }
+        .grid {
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+        .blog-card {
+            margin-bottom: 32px;
+        }
+    }
+
+    </style>
+</section>

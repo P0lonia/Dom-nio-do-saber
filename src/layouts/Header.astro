@@ -14,7 +14,7 @@ import Container from "../components/Container.astro";
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="">Blog</a>
+                <a href="/blog">Blog</a>
             </li>
             <li>
                 <a href="">Contato</a>
@@ -25,6 +25,7 @@ import Container from "../components/Container.astro";
 
 <style>
     header {
+        z-index: 100;
         color: rgb(23, 36, 48);
         background-color: rgb(255, 255, 255);
         padding: 12px;
@@ -38,6 +39,14 @@ import Container from "../components/Container.astro";
     div {
         display: flex;
         align-items: center;
+        
+    }
+
+    h1 {
+        font-family: "SUSE Mono", sans-serif;
+    }
+    h1 strong {
+        font-family: "SUSE Mono", sans-serif;
     }
 
     img {
@@ -65,7 +74,7 @@ import Container from "../components/Container.astro";
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 14px;
+            display: none;
         }
         ul li {
             font-size: 12px;

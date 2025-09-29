@@ -1,0 +1,33 @@
+---
+import Container from "../components/Container.astro";
+import Links from "../components/Links.astro";
+---
+
+<section>
+    <Container direction="column">
+        <h3>Inscreva-se e receba nossa newsletter!</h3>
+        <Links link="/teste">Inscrever-se</Links>
+    </Container>
+</section>
+
+<style>
+    section {
+        padding: 2.8vh;
+        margin-bottom: 32px;
+        background-color: rgba(11, 106, 194, 0.623);
+    }
+    section h3 {
+        color: white;
+        margin: 16px;
+        font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+        section {
+            padding: 4vw 2.8vw;
+        }
+        section h3 {
+            font-size: 18px;
+        }
+    }
+</style>

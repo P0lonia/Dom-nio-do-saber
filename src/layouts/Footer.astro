@@ -1,0 +1,36 @@
+---
+import Container from "../components/Container.astro";
+---
+
+<footer>
+    <Container maxWidth="1100px" justify="center" >
+            <img src="/images/logo/logoDominioDoSaber.jpeg" alt="Logo do Domínio do Saber">
+            <p>&copy; Todos os direitos reservados</p>
+    </Container>
+</footer>
+
+<style>
+    footer {
+        color: rgb(23, 36, 48);
+        background-color: rgb(255, 255, 255);
+        padding: 14px;
+        box-shadow: rgba(0, 0, 0, 0.315) 0px -4px 8px;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+    }
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 14px;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            margin-right: 8px;
+        }
+    }
+</style>

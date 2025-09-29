@@ -1,0 +1,65 @@
+---
+import Container from "./Container.astro";
+
+const { children, link = '', foto = '', titulo = '' } = Astro.props;
+---
+
+<Container justify="center">
+    <div>
+        <a href={`${link}`}>
+            <img src=`${foto}` alt="">
+            <h3>{titulo}</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias maiores placeat voluptatem ducimus at qui minima laborum alias, fugiat cum nemo, cupiditate accusamus id, eos impedit ipsum! Consectetur, rerum at.
+            </p>
+        </a>
+    </div>
+</Container>
+
+<style>
+    div {
+        padding: 8px;
+        background-color: white;
+        text-align: center;
+        border-bottom: 2px solid rgb(21, 69, 131) ;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.315) 0px 4px 16px;
+        transition: linear 0.3s;
+    }
+
+    a {
+        color: rgb(23, 36, 48);
+    }
+
+    h3 {
+        margin: 8px 0 0 0;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    a img {
+        width: 100%;
+        max-height: 216px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    div:hover {
+        box-shadow: rgba(0, 0, 0, 0.315) 0px 16px 28px;
+    }
+
+    a:hover {
+        color: rgb(21, 69, 131);
+    }
+
+    @media (max-width: 768px) {
+        div {
+            margin: 0 auto;
+            width: 350px;
+        }
+    }
+</style>
