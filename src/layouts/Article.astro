@@ -1,0 +1,12 @@
+---
+import Container from "../components/Container.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../layouts/Header.astro";
+---
+
+<BaseLayout>
+    <Header />
+    <Container justify="center">
+        <slot />
+    </Container>
+</BaseLayout>

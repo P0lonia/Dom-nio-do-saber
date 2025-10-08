@@ -1,12 +1,47 @@
 ---
+import Article from '../../layouts/Article.astro'
+
 export const metadata = {
     titulo: "Tecnologia e Inovação",
     descricao: "A tecnologia é a aplicação do conhecimento científico para resolver problemas...",
     foto: "https://cdn.pixabay.com/photo/2024/10/14/17/34/ai-generated-9120502_960_720.png",
-    descricaoImg: "Homem e com as mãos em um holograma",
+    descricaoImg: "Homem em ambiente tecnológico manipulando holograma digital de cérebro com as mãos.",
     date: "2025-04-04",
     link: "/articles/artigo1"
 }
 ---
 
-    <h1>Teste</h1>
+    <Article>
+        <article>
+            <header>
+                <p><time datetime="2025-04-04">4 de abril de 2025</time> · 29 min de leitura </p>
+                <h1><span>Tecnologia</span> e Inovação</h1>
+            </header>
+            <img src="https://static.wixstatic.com/media/73c7d6_6505741b57e047a5ae24fde86c0c5f22~mv2.jpg/v1/fill/w_635,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/73c7d6_6505741b57e047a5ae24fde86c0c5f22~mv2.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis soluta odit doloremque nobis ea blanditiis perferendis, reiciendis laboriosam, dolores placeat voluptatem fugit odio voluptatibus qui, optio provident est dicta vel!</p>
+        </article>
+    </Article>
+
+    <style>
+        header {
+            margin-top: 5vh;
+            padding: 2.6vw;
+        }
+
+        header p {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-family: "SUSE Mono", sans-serif;
+        }
+        span {
+            color: rgb(21, 69, 131);
+            font-family: "SUSE Mono", sans-serif;
+        }
+        img {
+            margin: 0 auto;
+        }
+    </style>

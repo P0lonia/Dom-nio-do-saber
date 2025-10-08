@@ -6,7 +6,7 @@ import Container from "../components/Container.astro";
     <Container maxWidth="1100px" >
         <div>
             <img src="/images/logo/logoDominioDoSaber.jpeg" alt="Logo do Domínio do Saber">
-            <h1><strong>Domínio</strong> do saber</h1>
+            <h1><span>Domínio</span> do saber</h1>
         </div>
 
         <ul>
@@ -39,13 +39,9 @@ import Container from "../components/Container.astro";
     div {
         display: flex;
         align-items: center;
-        
     }
 
     h1 {
-        font-family: "SUSE Mono", sans-serif;
-    }
-    h1 strong {
         font-family: "SUSE Mono", sans-serif;
     }
 
@@ -55,7 +51,8 @@ import Container from "../components/Container.astro";
         margin-right: 12px;
     }
 
-    strong {
+    span {
+        font-family: "SUSE Mono", sans-serif;
         color: rgb(21, 69, 131);
     }
     
