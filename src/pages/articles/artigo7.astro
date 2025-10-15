@@ -1,10 +1,16 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como Vender Produtos Digitais",
     descricao: "O mercado de produtos digitais está em ascensão e se tornou uma das formas mais eficazes de ganhar dinheiro...",
     foto: "https://cdn.pixabay.com/photo/2020/12/16/17/48/computer-5837248_960_720.jpg",
     descricaoImg: "Mulher de costas usando um laptop com gráficos e índices sobre uma mesa de madeira com uma caneca de chá",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo7"
 }
 ---
+
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

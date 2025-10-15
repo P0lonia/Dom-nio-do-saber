@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Espiritualidade em Todos os Momentos",
     descricao: "A espiritualidade não se limita apenas a momentos de oração, culto ou reflexão religiosa. Ela...",
     foto: "https://cdn.pixabay.com/photo/2016/11/22/23/29/meditate-1851165_1280.jpg",
     descricaoImg: "Mulher sentada de costas meditando ao pôr do sol",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo4"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

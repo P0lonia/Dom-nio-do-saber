@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Marketing Digital para Iniciantes",
     descricao: "Nos dias de hoje, ter uma presença online sólida é essencial para qualquer negócio, pequeno ou grande, e até...",
     foto: "https://cdn.pixabay.com/photo/2019/06/25/08/17/digital-marketing-4297723_1280.jpg",
     descricaoImg: "Quadro branco escrito marketing digital",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo21"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

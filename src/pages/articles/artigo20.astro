@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como Montar um Plano de Estudo Eficiente",
     descricao: "A preparação para concursos públicos ou exames importantes pode ser um grande desafio...",
     foto: "https://cdn.pixabay.com/photo/2019/12/18/13/56/glasses-4704055_1280.jpg",
     descricaoImg: "Óculos vermelho sobre diversos livros abertos",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo20"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

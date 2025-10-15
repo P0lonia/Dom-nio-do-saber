@@ -1,10 +1,16 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Guia Completo de Técnicas de Estudo",
     descricao: "Domine Seus Estudos: Técnicas Avançadas para Maximizar a Memorização, Foco e...",
     foto: "https://cdn.pixabay.com/photo/2015/07/11/19/23/book-841171_1280.jpg",
     descricaoImg: "Mulher de óculos e cabelo preso lê um livro",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo17"
 }
 ---
+
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

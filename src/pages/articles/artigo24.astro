@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como Escolher o Curso Certo para Passar",
     descricao: "Passar em um concurso público é o sonho de muitas pessoas em busca de estabilidade e um futuro...",
     foto: "/images/blog/escrita.jpg",
     descricaoImg: "Mão escreve em um caderno",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo24"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

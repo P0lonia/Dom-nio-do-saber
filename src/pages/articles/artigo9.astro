@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Mente Positiva na Longevidade",
     descricao: "A forma como você vê a vida e o mundo ao seu redor pode ter um impacto profundo na sua saúde...",
     foto: "https://cdn.pixabay.com/photo/2012/02/29/11/51/beautiful-18616_1280.jpg",
     descricaoImg: "Mulher de azul com expressão positiva",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo9"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Marketing de Afiliados para Ganhar Dinheiro",
     descricao: "Se você está procurando uma maneira comprovada de ganhar dinheiro online, o marketing de afiliados pode ser...",
     foto: "https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_1280.jpg",
     descricaoImg: "Monitor com muitos tipos de gráficos e estátisticas númericas",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo6"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

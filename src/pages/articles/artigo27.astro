@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Procrastinação: Como Vencer o Hábito",
     descricao: "Você já disse para si mesmo “depois eu faço”? Pois é. Essa frase, aparentemente inofensiva, tem um preço...",
     foto: "/images/blog/procastinacao.jpeg",
     descricaoImg: "Homem em frente ao computador entediado",
     date: "2025-03-25",
+    time: "0",
     link: "/articles/artigo27"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

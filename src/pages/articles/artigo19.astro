@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como usar o E-mail para Engajar Seu Público",
     descricao: "O e-mail marketing continua sendo uma das estratégias mais eficazes para engajar o público...",
     foto: "https://cdn.pixabay.com/photo/2016/12/13/07/25/email-1903444_1280.jpg",
     descricaoImg: "Smartphone mostrando a tela do aplicativo de e-mail com nova mensagem",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo19"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

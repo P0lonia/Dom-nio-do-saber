@@ -2,11 +2,59 @@
 import Container from "../components/Container.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../layouts/Header.astro";
+
+const {titulo, date, time, foto, descricaoImg } = Astro.props;
 ---
 
 <BaseLayout>
     <Header />
     <Container justify="center">
-        <slot />
+        <article>
+            <header>
+                <p><time datetime={date}>{date}</time> · {time} </p>
+                <h1>{titulo}</h1>
+                <img src={foto} alt={descricaoImg}>
+            </header>
+            <slot />
+            <div></div>
+        </article>
     </Container>
 </BaseLayout>
+
+<style>
+    div {
+        height: 5vh;
+        border-top: 1px solid #00000050;
+        border-bottom: 1px solid #00000050;
+    }
+
+    article {
+        padding: 2.6vw;
+        width: 100%;
+    }
+    header {
+        margin: 5vh 0;
+    }        
+    header h1 {
+        font-size: 36px;
+        font-family: "SUSE Mono", sans-serif;
+        margin-bottom: 2.6vw;
+    }
+    header p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    header img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 32px;
+        }
+    }
+</style>

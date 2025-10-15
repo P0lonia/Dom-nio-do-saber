@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como Iniciar um Curso de Tecnologia",
     descricao: "Nos dias de hoje, a tecnologia está em constante evolução e dominar suas ferramentas é...",
     foto: "https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg",
     descricaoImg: "Notebook semi-aberto com tela exibindo cores vibrantes",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo22"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

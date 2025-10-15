@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Acupuntura para Recuperação e Equilíbrio",
     descricao: "Você já se sentiu cansado sem saber por quê? Ou notou um aumento no estresse e falta de...",
     foto: "/images/blog/aculpuntura.jpg",
     descricaoImg: "Mulher deitada em uma maca com várias agulhas em suas costas",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo13"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

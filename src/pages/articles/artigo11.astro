@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como Manter a Mente Jovem e Viva",
     descricao: "À medida que envelhecemos, a saúde mental se torna tão importante quanto a saúde física...",
     foto: "https://cdn.pixabay.com/photo/2018/02/28/14/21/portrait-3188101_1280.jpg",
     descricaoImg: "Mulher idosa sorrindo amplamente",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo11"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

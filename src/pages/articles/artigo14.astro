@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Exercícios para o Corpo e a Mente",
     descricao: "Sabemos que, à medida que envelhecemos, o corpo e a mente passam a exigir mais...",
     foto: "https://cdn.pixabay.com/photo/2020/06/20/15/30/yoga-5321354_1280.jpg",
     descricaoImg: "Mulher faz exercícios",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo14"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

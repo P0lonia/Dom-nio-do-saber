@@ -1,10 +1,16 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como Seu Entorno Afeta Sua Longevidade",
     descricao: "Quando falamos sobre longevidade, muitas vezes focamos apenas em aspectos...",
     foto: "https://cdn.pixabay.com/photo/2019/10/06/10/03/team-4529717_1280.jpg",
     descricaoImg: "Pessoas em confraternização ao ar livre tocando suas mãos",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo8"
 }
 ---
+
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

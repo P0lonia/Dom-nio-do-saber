@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Artesanato está Transformando a Renda",
     descricao: "Nunca se valorizou tanto o que é único, feito com alma e propósito. Em um mundo saturado de...",
     foto: "/images/blog/boneca.jpg",
     descricaoImg: "Boneca rústica artesanal sobre mesa com vários artefatos ao redor",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo25"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

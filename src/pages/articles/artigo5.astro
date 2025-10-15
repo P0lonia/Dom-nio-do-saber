@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Guia Completo e Definitivo para Artesanato",
     descricao: "O artesanato é uma forma de arte que envolve a criação de objetos com as mãos e...",
     foto: "https://cdn.pixabay.com/photo/2017/08/07/20/17/craftsmanship-2607408_1280.jpg",
     descricaoImg: "Mãos de artesão trabalhando couro em bancada de oficina",
     date: "2025-03-27",
+    time: "0",
     link: "/articles/artigo5"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>

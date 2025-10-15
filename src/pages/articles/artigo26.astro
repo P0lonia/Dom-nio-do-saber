@@ -1,10 +1,15 @@
 ---
+import Article from "../../layouts/Article.astro"
+
 export const metadata = {
     titulo: "Como a Tecnologia Está Gerando Autonomia",
     descricao: "Nos últimos anos, a tecnologia deixou de ser apenas um recurso de empresas consolidadas...",
     foto: "https://cdn.pixabay.com/photo/2016/11/29/12/30/phone-1869510_960_720.jpg",
     descricaoImg: "Smartphone sobre mapa-múndi",
     date: "2025-03-26",
+    time: "0",
     link: "/articles/artigo26"
 }
 ---
+
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>
