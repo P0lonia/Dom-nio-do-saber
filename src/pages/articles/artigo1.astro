@@ -1,6 +1,6 @@
 ---
 import Article from '../../layouts/Article.astro'
-import ArticleSection from '../../layouts/ArticleSection.astro'
+import '../../styles/ArticleSection.css'
 
 export const metadata = {
     titulo: "Tecnologia e Inovação",
@@ -14,11 +14,11 @@ export const metadata = {
 ---
 
 <Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}>
-    <ArticleSection>
+    <section>
         <h2>O que é tecnologia?</h2>
         <p>A tecnologia é a aplicação do conhecimento científico para resolver problemas e melhorar a qualidade de vida das pessoas. Ela envolve ferramentas, processos, sistemas e dispositivos que usamos para facilitar tarefas diárias, comunicar-nos, e até mesmo transformar o mundo em que vivemos. Desde os simples utensílios domésticos até as complexas inovações tecnológicas como inteligência artificial e computação em nuvem, a tecnologia está presente em todas as áreas da nossa vida.
         Em sua essência, a tecnologia não é apenas sobre aparelhos eletrônicos ou máquinas sofisticadas. Ela é, acima de tudo, uma forma de melhorar as condições de vida, facilitar o trabalho e impulsionar o progresso humano. De certa forma, tudo o que criamos ou usamos para facilitar nossas atividades diárias pode ser considerado tecnologia.</p>
-    </ArticleSection>
+    </section>
 
     <section>
         <h2>Por que Entender Tecnologia é Importante?</h2>
@@ -1119,41 +1119,3 @@ export const metadata = {
 </Article>
 
 
-<style>
-    section {
-        margin: 48px 0;
-    }
-
-    li strong {
-        color: rgb(21, 69, 131);
-    }
-
-    img {
-        display: flex;
-        margin: 0 auto;
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-
-    h2 {
-        margin-bottom: 16px;
-    }
-
-    ul li {
-        list-style:  disc;
-    }
-
-    ol li {
-        list-style: decimal;
-    }
-
-    ol ul li {
-        list-style: circle;
-    }
-
-    li {
-        margin: 8px 0px 8px 32px;
-    }
-</style>
