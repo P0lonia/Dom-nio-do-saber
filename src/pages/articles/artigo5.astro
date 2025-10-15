@@ -1,5 +1,6 @@
 ---
 import Article from "../../layouts/Article.astro"
+import '../../styles/ArticleSection.css'
 
 export const metadata = {
     titulo: "Guia Completo e Definitivo para Artesanato",
@@ -7,9 +8,129 @@ export const metadata = {
     foto: "https://cdn.pixabay.com/photo/2017/08/07/20/17/craftsmanship-2607408_1280.jpg",
     descricaoImg: "Mãos de artesão trabalhando couro em bancada de oficina",
     date: "2025-03-27",
-    time: "0",
+    time: "4 min de leitura",
     link: "/articles/artigo5"
 }
 ---
 
-<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}>
+    <p>
+        O artesanato é uma forma de arte que envolve a criação de objetos com as mãos e ferramentas simples. Ele tem uma rica tradição cultural, sendo transmitido de geração em geração e se adaptando ao longo do tempo. Além de ser uma expressão de criatividade, o artesanato pode ser uma forma de geração de renda e até mesmo de terapia. Este guia oferece uma visão abrangente das técnicas, materiais, e práticas necessárias para dominar o artesanato em diversas formas.
+    </p>
+    <section>
+        <h2>1. Entendendo o Artesanato</h2>
+        <p>
+            O artesanato envolve a criação manual de objetos utilitários ou decorativos, utilizando habilidades e conhecimentos específicos. As principais categorias de artesanato incluem:
+        </p>
+        <ul>
+            <li>
+                <strong>Artesanato em madeira:</strong> Escultura, móveis, utensílios.
+            </li>
+            <li>
+                <strong>Artesanato têxtil:</strong> Tricô, crochê, bordado, costura.
+            </li>
+            <li>
+                <strong>Artesanato em cerâmica:</strong> Confecção de utensílios e objetos de barro.
+            </li>
+            <li>
+                <strong>Artesanato em vidro:</strong> Vidros pintados, vitrais, objetos decorativos.
+            </li>
+            <li>
+                <strong>Artesanato com metal:</strong> Bijuterias, esculturas, objetos decorativos.
+            </li>
+            <li>
+                <strong>Artesanato em papel:</strong> Scrapbooking, origami, papel machê.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Principais Técnicas de Artesanato</h2>
+        <p>Aqui estão algumas das técnicas mais populares no artesanato e como aplicá-las:</p>
+        <ol>
+            <li> <strong>Técnicas de Tricô e Crochê</strong>
+                <ul>
+                    <li>
+                        <strong>Tricô:</strong> Consiste em entrelaçar fios de lã ou algodão com agulhas para formar tecidos. Ideal para criar roupas como suéteres, cachecóis e meias.
+                    </li>
+                    <li>
+                        <strong>Crochê:</strong> Usando um único gancho, o crochê permite criar peças detalhadas, como toalhas, blusas e bolsas. É possível fazer peças mais complexas como tapetes e mantas.
+                    </li>
+                </ul>
+            </li>
+            <li> <strong>Pintura e Decoração</strong>
+                <ul>
+                    <li>
+                        <strong>Pintura em tecido:</strong> Usada para criar desenhos e padrões em roupas e acessórios, como bolsas e almofadas.
+                    </li>
+                    <li>
+                        <strong>Pintura em madeira e cerâmica:</strong> Ideal para personalizar objetos de uso diário, como caixas, vasos e móveis.
+                    </li>
+                </ul>
+            </li>
+            <li> <strong>Artesanato em Papel</strong>
+                <ul>
+                    <li>
+                        <strong>Scrapbooking:</strong> Técnica que envolve a colagem de fotos, adesivos e decorações em álbuns.
+                    </li>
+                    <li>
+                        <strong>Origami:</strong> Dobraduras de papel para criar figuras como flores, animais, e estruturas.
+                    </li>
+                    <li>
+                        <strong>Papel Machê:</strong> Técnica usada para criar formas tridimensionais, aplicando camadas de papel sobre uma base.
+                    </li>
+                </ul>
+            </li>
+            <li> <strong>Artesanato em Metal</strong>
+                <ul>
+                    <li>
+                        <strong>Corte e gravação:</strong> Usado para criar bijuterias e peças decorativas. Ferramentas como serrotes e limas são fundamentais.
+                    </li>
+                    <li>
+                        <strong>Fundição de metal:</strong> Para criar formas e figuras em materiais como bronze e prata, por exemplo.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>3. Materiais Necessários</h2>
+        <p>
+            Cada tipo de artesanato exige um conjunto específico de materiais. Aqui estão os mais comuns:
+        </p>
+        <ul>
+            <li>
+                <strong>Madeira:</strong> Para escultura, móveis e itens decorativos.
+            </li>
+            <li>
+                <strong>Tecidos:</strong> Algodão, lã, seda, e outros tecidos para costura, tricô, e crochê.
+            </li>
+            <li>
+                <strong>Tinta e Pincéis:</strong> Para pintura em diversos materiais, como madeira, tecido e cerâmica.
+            </li>
+            <li>
+                <strong>Fios e Linhas:</strong> Nylon, algodão, lã, utilizados para tricô, crochê e costura.
+            </li>
+            <li>
+                <strong>Papéis Especiais:</strong> Cartolina, papel kraft, papéis estampados e texturizados para scrapbooking e origami.
+            </li>
+            <li>
+                <strong>Ferramentas de Corte e Gravação:</strong> Tesouras, estiletes, limas e serras para cortar e modelar materiais.
+            </li>
+            <li>
+                <strong>Argila e Massa para Modelagem:</strong> Para criar peças de cerâmica ou esculturas.
+            </li>
+            <li>
+                <strong>Pedras e Cristais:</strong> Para confeccionar bijuterias, esculturas ou outros itens.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Como Criar Seu Próprio Projeto de Artesanato</h2>
+        <p>
+            Antes de começar, defina qual tipo de artesanato você quer aprender. Escolha algo que combine com seus interesses e tenha recursos acessíveis.
+        </p>
+    </section>
+</Article>
