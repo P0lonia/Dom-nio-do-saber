@@ -1,5 +1,6 @@
 ---
 import Article from "../../layouts/Article.astro"
+import '../../styles/ArticleSection.css'
 
 export const metadata = {
     titulo: "Como Manter a Mente Jovem e Viva",
@@ -7,9 +8,112 @@ export const metadata = {
     foto: "https://cdn.pixabay.com/photo/2018/02/28/14/21/portrait-3188101_1280.jpg",
     descricaoImg: "Mulher idosa sorrindo amplamente",
     date: "2025-03-27",
-    time: "0",
+    time: "4 min de leitura",
     link: "/articles/artigo11"
 }
 ---
 
-<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}>
+    <p>
+        À medida que envelhecemos, a saúde mental se torna tão importante quanto a saúde física. A mente saudável não só influencia a forma como nos sentimos, mas também pode ser um fator determinante na nossa capacidade de manter a vitalidade e a qualidade de vida à medida que avançamos na idade. Cuidar da mente é, sem dúvida, uma parte essencial da longevidade.
+    </p>
+
+    <section>
+        <h2>1. O Poder do Estímulo Mental: Mantenha a Mente Ativa</h2>
+        <p>
+            Uma mente ativa é uma mente saudável. Assim como o corpo precisa de exercícios físicos para se manter forte, o cérebro também precisa de desafios cognitivos para evitar o declínio mental, como o Alzheimer ou outras formas de demência.
+        </p>
+        <strong>O que fazer:</strong>
+        <ul>
+            <li><strong>Exercícios cognitivos diários:</strong>
+                Tente resolver quebra-cabeças, fazer palavras cruzadas ou jogar jogos de memória. Estudar um novo idioma ou aprender uma habilidade nova também são excelentes maneiras de desafiar seu cérebro.
+            </li>
+            <li><strong>Leitura diária:</strong>
+                Ler livros, artigos ou mesmo blogs interessantes ajuda a manter o cérebro engajado, além de ser uma forma prazerosa de expandir o conhecimento e estimular a criatividade.
+            </li>
+            <li><strong>Tecnologia e Aplicativos de Estímulo Mental:</strong>
+                Existem muitos aplicativos gratuitos ou pagos que oferecem jogos para o cérebro, como Sudoku, xadrez ou jogos de palavras. Eles podem ser facilmente incorporados ao seu dia a dia.
+            </li>
+        </ul>
+        <p>
+            <strong>Benefício prático:</strong> Estimular o cérebro com atividades cognitivas pode melhorar a memória, aumentar a concentração e até prevenir o declínio mental com o tempo.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. O Papel do Sono: A Recuperação Mental e Física</h2>
+        <p>
+            Embora muitos considerem o sono apenas uma necessidade física, ele tem um impacto direto na saúde mental. Durante o sono, o cérebro passa por um processo de recuperação e reparo, que é fundamental para o funcionamento adequado da memória, emoções e capacidades cognitivas.
+        </p>
+        <strong>O que fazer:</strong>
+        <ul>
+            <li><strong>Estabeleça uma rotina de sono regular:</strong>
+                Tente dormir e acordar sempre no mesmo horário todos os dias. Isso ajuda a regular seu relógio biológico e melhora a qualidade do sono.
+            </li>
+            <li><strong>Ambiente adequado para o sono:</strong>
+                Certifique-se de que seu quarto seja silencioso, escuro e confortável. Evite o uso de eletrônicos antes de dormir, pois a luz azul interfere na produção de melatonina, o hormônio responsável pelo sono.
+            </li>
+            <li><strong>Práticas relaxantes antes de dormir:</strong>
+                A meditação, a leitura tranquila ou até mesmo um banho morno podem ajudar a acalmar a mente e preparar o corpo para uma noite de sono reparador.
+            </li>
+        </ul>
+        <p>
+            <strong>Benefício prático:</strong> Dormir o suficiente e ter uma boa qualidade de sono pode melhorar o humor, aumentar a clareza mental e até ajudar a prevenir problemas emocionais e psicológicos.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. O Impacto da Emoção: Como Gerenciar o Estresse e a Ansiedade</h2>
+        <p>
+            O estresse crônico não só afeta a saúde física, mas também pode ter um impacto significativo no bem-estar mental. A ansiedade, por exemplo, pode prejudicar a concentração e aumentar os níveis de cortisol (o hormônio do estresse), que está relacionado ao envelhecimento precoce e a diversas doenças.
+        </p>
+        <strong>O que fazer:</strong>
+        <ul>
+            <li><strong>Técnicas de Meditação e Mindfulness:</strong>
+                A prática regular de meditação ajuda a acalmar a mente, diminuir a ansiedade e aumentar a resiliência emocional. O mindfulness (atenção plena) ajuda a focar no momento presente, reduzindo o estresse causado por pensamentos sobre o passado ou futuro.
+            </li>
+            <li><strong>Exercícios de Respiração Profunda:</strong>
+                Técnicas de respiração controlada, como a respiração abdominal, podem ajudar a reduzir o estresse e restaurar o equilíbrio emocional. Faça uma pausa durante o dia para respirar profundamente por alguns minutos.
+            </li>
+            <li><strong>Encontre fontes de prazer e relaxamento:</strong>
+                Estabeleça momentos de lazer e prazer em sua rotina, como caminhar ao ar livre, conversar com amigos, praticar um hobby ou fazer algo que realmente o faça feliz.
+            </li>
+        </ul>
+        <p>
+            <strong>Benefício prático:</strong> Controlar o estresse e a ansiedade melhora a clareza mental, reduz os sintomas de depressão e aumenta a sensação de bem-estar geral.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. A Importância de Manter Conexões Sociais</h2>
+        <p>
+            As interações sociais são um dos maiores fatores de proteção contra o declínio cognitivo e emocional à medida que envelhecemos. Estar cercado por amigos, familiares e pessoas que nos apoiam tem um impacto significativo na saúde mental.
+        </p>
+        <strong>O que fazer:</strong>
+        <ul>
+            <li><strong>Mantenha o contato com amigos e familiares:</strong>
+                As interações sociais não só ajudam a reduzir a solidão, mas também podem ser uma excelente forma de manter a mente ativa e o humor equilibrado.
+            </li>
+            <li><strong>Participe de atividades em grupo:</strong>
+                Seja praticando esportes, fazendo voluntariado ou participando de clubes ou grupos de interesse, as atividades sociais ajudam a manter a mente envolvida e em contato com o mundo ao seu redor.
+            </li>
+            <li><strong>Apoie os outros:</strong>
+                Ao ajudar os outros, seja emocionalmente ou através de gestos simples de bondade, você também fortalece seu próprio bem-estar mental.
+            </li>
+        </ul>
+        <p>
+            <strong>Benefício prático:</strong> As conexões sociais ajudam a reduzir a sensação de solidão, melhoram o humor e oferecem suporte emocional, que é crucial para a saúde mental a longo prazo.
+        </p>
+    </section>
+
+    <section>
+        <h2>A Longevidade Mental Está em Suas Mãos</h2>
+        <p>
+            Manter a mente saudável é tão importante quanto cuidar do corpo. Com as práticas corretas, como exercícios mentais diários, uma boa rotina de sono, controle do estresse e manutenção de conexões sociais, você pode <strong>preservar sua saúde mental</strong> e garantir que sua mente permaneça jovem e ativa por muito mais tempo.
+        </p>
+        <p>
+            A longevidade mental não é um privilégio de poucos. Ela é uma questão de <strong>escolhas diárias</strong>. Comece hoje, e colha os frutos de uma mente mais saudável, forte e clara nos anos que virão.
+        </p>
+    </section>
+    <strong>Invista no seu bem-estar mental, e veja a diferença no seu corpo e na sua vida.</strong>
+</Article>
