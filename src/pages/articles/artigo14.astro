@@ -1,5 +1,6 @@
 ---
 import Article from "../../layouts/Article.astro"
+import '../../styles/ArticleSection.css'
 
 export const metadata = {
     titulo: "Exercícios para o Corpo e a Mente",
@@ -7,9 +8,151 @@ export const metadata = {
     foto: "https://cdn.pixabay.com/photo/2020/06/20/15/30/yoga-5321354_1280.jpg",
     descricaoImg: "Mulher faz exercícios",
     date: "2025-03-27",
-    time: "0",
+    time: "4 min de leitura",
     link: "/articles/artigo14"
 }
 ---
 
-<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}></Article>
+<Article titulo={metadata.titulo} descricao={metadata.descricao} foto={metadata.foto} descricaoImg={metadata.descricaoImg} date={metadata.date} time={metadata.time} link={metadata.link}>
+    <p>
+        Sabemos que, à medida que envelhecemos, o corpo e a mente passam a exigir mais cuidado para continuar funcionando de maneira eficiente. Mas o segredo da longevidade não está apenas em evitar doenças, mas em manter o corpo em movimento. Não é necessário se submeter a exercícios intensos ou a rotinas de treino pesadas. O verdadeiro segredo está em movimentos diários e simples, que promovem a saúde e o equilíbrio de forma sustentável.
+    </p>
+
+    <section>
+        <h2>1. O Segredo do Movimento Diário</h2>
+        <p>
+            Você já se perguntou por que algumas pessoas, mesmo na velhice, parecem ter mais energia, flexibilidade e disposição? O segredo não está em uma genética especial, mas sim no fato de que essas pessoas <strong>movimentam o corpo</strong> regularmente. <strong>O movimento diário</strong> é uma das chaves para a longevidade. Não precisamos de treinos extenuantes ou academias caras para isso. Movimentos simples e naturais são suficientes para manter nosso corpo saudável.
+        </p>
+        <strong>O que fazer:</strong>
+        <ol>
+            <li>
+                <p>
+                    <strong>Caminhadas Diárias:</strong> A prática de uma caminhada de 30 minutos todos os dias é uma das formas mais simples e eficazes de manter o corpo ativo. A caminhada não só melhora a circulação, mas também fortalece o coração e reduz o risco de doenças cardiovasculares.
+                </p>
+
+                <ul>
+                    <li><strong>Como incluir no dia a dia:</strong>
+                        Pegue um tempo, mesmo que seja 15-30 minutos durante o dia, para caminhar. Seja ao ar livre, em parques, ruas calmas ou até dentro de casa.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    <strong>Movimentos Suaves e Funcionais:</strong> No Japão e na China, práticas como o <strong>Tai Chi</strong> e o <strong>Qi Gong</strong> são comumente usadas para promover a longevidade. Elas envolvem movimentos suaves e lentos que aumentam a circulação sanguínea, melhoram o equilíbrio e reduzem o estresse.
+                </p>
+
+                <ul>
+                    <li><strong>Como incluir no dia a dia:</strong>
+                        Tente realizar pelo menos 10 minutos de exercícios como o Tai Chi ou Qi Gong pela manhã. Existem várias aulas online gratuitas que podem ser feitas de forma simples e prática.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            <strong>Benefício prático:</strong> O movimento diário melhora a flexibilidade, a circulação, reduz o risco de doenças crônicas e previne quedas, especialmente à medida que envelhecemos.
+        </p>
+    </section>
+
+        <section>
+        <h2>2. A Prática de Exercícios de Força Moderados: Preservando os Músculos e Ossos</h2>
+        <p>
+            À medida que envelhecemos, o corpo começa a perder massa muscular, o que pode levar a fraqueza, dores nas articulações e até à osteoporose. Manter os músculos fortes é essencial para prevenir esses problemas e, além disso, ajuda a manter a mobilidade e a independência ao longo da vida.
+        </p>
+        <strong>O que fazer:</strong>
+        <ol>
+            <li>
+                <p>
+                    <strong>Exercícios de Força Leves:</strong> Levantamento de pesos leves ou exercícios usando o peso do corpo, como agachamentos, flexões e abdominais, são extremamente eficazes para fortalecer a musculatura e os ossos.
+                </p>
+
+                <ul>
+                    <li><strong>Como incluir no dia a dia:</strong>
+                        Dedique de 10 a 15 minutos, duas a três vezes por semana, para fazer exercícios de força. Comece com exercícios simples e aumente gradualmente a intensidade.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    <strong>Yoga e Pilates:</strong> Ambas as práticas são excelentes para manter a força, flexibilidade e equilíbrio, além de prevenirem a perda muscular associada ao envelhecimento.
+                </p>
+
+                <ul>
+                    <li><strong>Como incluir no dia a dia:</strong>
+                        Tente praticar yoga ou pilates 2 a 3 vezes por semana. Você pode começar com aulas online ou em estúdios locais que ofereçam opções para iniciantes.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            <strong>Benefício prático:</strong> Os exercícios de força ajudam a manter a densidade óssea, preservam a massa muscular e promovem a flexibilidade. Eles são fundamentais para a manutenção da independência e mobilidade com a idade.
+        </p>
+    </section>
+
+        <section>
+        <h2>3. Alongamento e Mobilidade: A Flexibilidade que Protege o Corpo</h2>
+        <p>
+            Com o tempo, as articulações e músculos perdem sua flexibilidade, o que pode resultar em dores, rigidez e dificuldades de movimento. O alongamento regular ajuda a manter as articulações em movimento, prevenindo a rigidez e melhorando a circulação.
+        </p>
+        <strong>O que fazer:</strong>
+        <ol>
+            <li>
+                <p>
+                    <strong>Alongamentos Diários:</strong> Dedique 10 a 15 minutos do seu dia para alongar os músculos principais. Isso pode incluir movimentos como esticar os braços, alongar as pernas, e girar a coluna.
+                </p>
+
+                <ul>
+                    <li><strong>Como incluir no dia a dia:</strong>
+                        Faça alongamentos ao acordar ou antes de dormir, incorporando-os em sua rotina diária.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    <strong>Movimentos de Mobilidade:</strong> Técnicas de mobilidade, como as praticadas no <strong>Qi Gong</strong> e <strong>Tai Chi</strong>, ajudam a manter a fluidez do corpo. Movimentos suaves que fazem o corpo "fluir" reduzem as tensões acumuladas e melhoram a flexibilidade.
+                </p>
+            </li>
+        </ol>
+        <p>
+            <strong>Benefício prático:</strong> O alongamento e os movimentos de mobilidade ajudam a manter a <strong>postura</strong>, <strong>aumentam a flexibilidade</strong> e <strong>reduzem as dores articulares</strong>, contribuindo para a saúde do corpo como um todo.
+        </p>
+    </section>
+
+        <section>
+        <h2>4. Quantidade Recomendada de Exercícios</h2>
+        <p>
+            Não é necessário gastar horas se exercitando, mas a consistência é crucial. Para garantir uma saúde ideal e longevidade, recomenda-se o seguinte:
+        </p>
+        <strong>O que fazer:</strong>
+        <ul>
+            <li>
+                <p>
+                    <strong>150 minutos de atividade moderada por semana.</strong> Isso equivale a cerca de <strong>30 minutos</strong>, <strong>5 vezes por semana</strong>. Pode ser caminhada, ciclismo ou exercícios de baixo impacto como yoga e Tai Chi.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>2 a 3 sessões de exercícios de força por semana.</strong> Esses exercícios devem ser voltados para os músculos principais, como pernas, braços e core.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Alongamentos diários de 10 a 15 minutos</strong> especialmente para quem passa longas horas sentado.
+                </p>
+            </li>
+        </ul>
+        <p>
+            <strong>Benefício prático:</strong> Com essa quantidade de movimento semanal, você ajuda a manter seu corpo forte, flexível e com uma boa circulação, garantindo um envelhecimento saudável e ativo.
+        </p>
+    </section>
+
+    <section>
+        <h2>Movimente-se para Viver Melhor</h2>
+        <p>
+            A prática regular de exercícios não precisa ser complexa ou extenuante. Ao integrar <strong>movimentos suaves</strong>, como caminhadas, <strong>exercícios de força moderados</strong>, e <strong>alongamentos diários</strong>, você está criando um alicerce sólido para um corpo saudável e para a <strong>longevidade.</strong>
+            Lembre-se: não importa a idade, nunca é tarde para começar. Comece com pequenos passos e gradualmente aumente a intensidade, respeitando os sinais do seu corpo. 
+        </p>
+        <p>
+            Movimentar-se com frequência e de forma equilibrada é um dos segredos mais poderosos que você pode incorporar na sua vida para garantir uma vida longa e cheia de energia.
+        </p>
+    </section>
+</Article>
