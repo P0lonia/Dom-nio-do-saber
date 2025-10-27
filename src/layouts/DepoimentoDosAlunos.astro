@@ -6,7 +6,7 @@
     <h2>Depoimento Dos Nossos Alunos</h2>
     <div class="grid">
         <article>
-            <img src="/images/HeadShots/img1.jpg" alt="">
+            <img class="head-shot" src="/images/HeadShots/img1.webp" alt="">
             <h3>Gileno</h3>
             <div class="review-rating" aria-label="5 de 5 estrelas">
                 <img src="/images/Icons/starFill.svg" alt="Estrela">
@@ -18,7 +18,7 @@
             <p>Curso excelente! As explicações são claras e os exemplos práticos ajudaram muito a entender o conteúdo.</p>
         </article>
         <article>
-            <img src="/images/HeadShots/img2.jpg" alt="">
+            <img class="head-shot" src="/images/HeadShots/img2.webp" alt="">
             <h3>Heloísa</h3>
             <div class="review-rating" aria-label="5 de 5 estrelas">
                 <img src="/images/Icons/starFill.svg" alt="Estrela">
@@ -30,7 +30,7 @@
             <p>Muito bom! Só senti falta de alguns exercícios extras, mas no geral o aprendizado foi ótimo.</p>
         </article>
         <article>
-            <img src="/images/HeadShots/img3.jpg" alt="">
+            <img class="head-shot" src="/images/HeadShots/img3.webp" alt="">
             <h3>Lavinha</h3>
             <div class="review-rating" aria-label="5 de 5 estrelas">
                 <img src="/images/Icons/starFill.svg" alt="Estrela">
@@ -42,7 +42,7 @@
             <p>Não esperava aprender tanto em tão pouco tempo. Recomendo de olhos fechados!</p>
         </article>
         <article>
-            <img src="/images/HeadShots/img4.jpg" alt="">
+            <img class="head-shot" src="/images/HeadShots/img4.webp" alt="">
             <h3>Alexandre Motta</h3>
             <div class="review-rating" aria-label="5 de 5 estrelas">
                 <img src="/images/Icons/starFill.svg" alt="Estrela">
@@ -54,7 +54,7 @@
             <p>O instrutor é excelente e o material é super bem organizado. Valeu cada minuto!</p>
         </article>
         <article>
-            <img src="/images/HeadShots/img5.jpg" alt="">
+            <img class="head-shot" src="/images/HeadShots/img5.webp" alt="">
             <h3>Yaguinho</h3>
             <div class="review-rating" aria-label="5 de 5 estrelas">
                 <img src="/images/Icons/starFill.svg" alt="Estrela">
@@ -72,6 +72,8 @@
     section {
         padding: 10vh 0vw;
         background-color: aliceblue;
+        border-top: 2px solid #00000013;
+        border-bottom: 2px solid #00000013;
     }
 
     section h2 {
@@ -90,13 +92,14 @@
         width: 1200px;
         margin: 0 auto;
     }
-    .grid img {
+    .grid .head-shot {
         width: 90%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
-        border: 1px solid rgba(23, 36, 48, 0.801);
+        border: 3px solid rgba(23, 36, 48, 0.801);
         margin-bottom: 8px;
+        box-shadow: 0 0 32px 2px #00000067;
     }
 
     p {
