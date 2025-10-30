@@ -1,12 +1,67 @@
----
-import Container from "../components/Container.astro";
----
-
 <footer>
-    <Container maxWidth="1100px" justify="center" >
-            <img src="/images/logo/logoDominioDoSaber.jpeg" alt="Logo do Domínio do Saber">
-            <p>&copy; Todos os direitos reservados</p>
-    </Container>
+    <div class="grid">
+        <section>
+            <h2><img src="/images/logo/logoDominioDoSaber.jpeg" alt="Logo do Domínio do saber">Domínio do saber</h2>
+            <p>
+                A Domínio do Saber é uma plataforma dedicada à educação e ao aprendizado contínuo. Nosso objetivo é oferecer cursos acessíveis, conteúdos de qualidade e oportunidades de crescimento pessoal e profissional para todos que desejam expandir seus conhecimentos.
+            </p>
+            <p>
+                <strong><i>CNPJ: 00.000.000/0001-50</i></strong>
+            </p>
+            <h3>Siga-nos nas redes sociais</h3>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="/images/Icons/instagram.svg" alt="Logo do Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/images/Icons/facebook.svg" alt="Logo do Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/images/Icons/linkedin.svg" alt="Logo do Linkedin">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Menu</h2>
+            <ul>
+                <li class="menu">
+                    <a href="/">Home</a>
+                </li>
+                <li class="menu">
+                    <a href="">Cursos</a>
+                </li>
+                <li class="menu">
+                    <a href="">Edições especiais</a>
+                </li>
+                <li class="menu">
+                    <a href="/blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Fale conosco</h2>
+            <form>
+                <label>Nome:</label>
+                <input type="text" placeholder="Insira seu nome completo">
+                <label>E-mail:</label>
+                <input type="email" placeholder="Insira seu E-mail"> 
+                <label>Mensagem:</label>
+                <textarea></textarea>
+            </form>
+            <button type="button">Cadastrar-se</button>
+        </section>
+    </div>
+    <div class="final">
+        <p>&copy; 2025 Domínio do saber | Todos os direitos reservados</p>
+    </div>
 </footer>
 
 <style>
@@ -16,21 +71,142 @@ import Container from "../components/Container.astro";
         padding: 14px;
         box-shadow: rgba(0, 0, 0, 0.315) 0px -4px 8px;
     }
+    
+    .grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    section {
+        padding: 2.8vw;
+    }
+    
+    h2 {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        color: rgb(21, 69, 131);
+        margin-bottom: 32px;
+        font-family: "SUSE Mono", sans-serif
+    }
 
-    img {
+    h2 img {
         height: 50px;
         width: 50px;
         margin-right: 12px;
     }
+    
+    p {
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        margin: 24px 0;
+    }
+
+    .menu {
+        display: list-item;
+        margin-bottom: 16px;
+    }
+
+    .menu a {
+        color: rgba(23, 36, 48, 0.70);
+    }
+
+    .menu a:hover {
+        filter: opacity(50%);
+        transition: ease 0.2s;
+        padding-left: 4px;
+    }
+
+    li {
+        display: inline;
+        margin-right: 8px;
+    }
+
+    li img {
+        width: 34px;
+        height: 34px;
+    }
+
+    li img:hover {
+        filter: opacity(50%);
+        transition: ease 0.2s;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-style: italic;
+        margin-bottom: 16px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #0000004b;
+        box-shadow: 0 0 24px 2px #00000018;
+        margin-bottom: 16px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #0000004b;
+        box-shadow: 0 0 24px 2px #00000018;
+        resize: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid #0000004b;
+        box-shadow: 0 0 24px 2px #00000018;
+        margin-top: 16px;
+        cursor: pointer;
+        background-color: rgb(255, 115, 0);
+        color: white;
+    }
+
+    button:hover {
+        scale: 1.02;
+        background-color: rgb(224, 103, 3);
+    }
+
+    .final {
+        text-align: center;
+        border-top: 1px solid #00000033;
+        padding: 32px;
+        font-size: 14px;
+        color: rgba(23, 36, 48, 0.8);
+    }
+
+
 
     @media (max-width: 768px) {
-        p {
+        section p {
             font-size: 14px;
         }
-        img {
-            height: 40px;
-            width: 40px;
-            margin-right: 8px;
+        
+        .grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        section {
+            border-bottom: 1px solid #00000033;
+        }
+        
+        .final {
+            font-size: 12px;
         }
     }
 </style>
