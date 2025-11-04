@@ -15,7 +15,7 @@ import Links from "../components/Links.astro";
         </h3>
         <strong>Agora aberto para inscrição:</strong>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolorum pariatur! Necessitatibus minus maxime placeat, quae aut dolorum officiis expedita adipisci perspiciatis quia et ratione. Corrupti, repellendus. Saepe, aut reiciendis!
+            Lorem ipsum <span> dolor sit amet consectetur</span> adipisicing elit. Sunt, dolorum pariatur! Necessitatibus minus maxime placeat, quae aut dolorum officiis expedita adipisci perspiciatis quia et ratione!
         </p>
         <Links link="/">
             Inscreva-se 
@@ -83,6 +83,7 @@ import Links from "../components/Links.astro";
     }
 
     .informacoes-hero strong {
+        position: relative;
         font-size: 24px;
         font-style: italic;
         margin-bottom: 44px;
@@ -97,13 +98,41 @@ import Links from "../components/Links.astro";
 
     a {
         text-align: center;
-        background-color: rgb(255, 115, 0);;
+        background-color: rgb(255, 115, 0);
     }
 
     .hero img {
         width: 100%;
         max-height: 50vh;
         object-fit: contain;
+    }
+
+    .informacoes-hero strong::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px; /* distancia da linha em relação ao texto */
+        height: 2px;
+        width: 0;
+        background-color: rgba(255, 115, 0, 0.9);
+        transition: width 0.4s ease-in-out;
+    }
+
+    .hero:hover .informacoes-hero strong::after {
+        width: 100%;
+    }
+
+    .hero:hover .informacoes-hero strong::after {
+        animation: expandirLinha 0.7s ease;
+    }
+
+    @keyframes expandirLinha {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
     }
 
     @media (max-width: 768px) {
