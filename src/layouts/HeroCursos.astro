@@ -35,6 +35,7 @@ import Links from "../components/Links.astro";
         right: 0;
     }
     .hero{
+        padding: 2.8vw;
         height: 70vh;
         width: 100%;
         background: linear-gradient(to right,
@@ -106,9 +107,27 @@ import Links from "../components/Links.astro";
     }
 
     @media (max-width: 768px) {
-        h2 {
+        .hero img {
+            display: none;
+        }
+        .informacoes-hero h2 {
+            font-size: 22px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .informacoes-hero h3 {
             text-align: center;
             font-size: 18px;
+            margin-bottom: 28px;
+        }
+        .informacoes-hero strong {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 34px;
+        }
+        .informacoes-hero p {
+            font-size: 14px;
+            text-align: center;
         }
     }
 </style>
