@@ -1,46 +1,126 @@
 ---
-import Links from "../components/Links.astro"
+
 ---
 
-<div>
-    <h2>
-        Veja o melhor conteúdo da web para seu crescimento pessoal e profissional!
-    </h2>
-    <Links href="">
-        Saiba mais
-    </Links>
-</div>
+<section>
+    <div class="carousel">
+        <button class="left">←</button>
 
+        <div class="image">
+            <span></span>
+            <img src="/images/heroCaroussel/hero2.png">
+            <img src="/images/heroCaroussel/leitura.png">
+            <img src="/images/heroCaroussel/memorização.png">
+            <img src="/images/heroCaroussel/tecnicas.png">
+        </div>
 
+        <button class="right">→</button>
+    </div>
+</section>
 
 <style>
-    div {
-        height: 70vh;
+    span {
+        position: absolute;
         width: 100%;
-        background: linear-gradient(to right,
-        rgba(0,0,0,0.5) 10%, 
-        rgba(0, 0, 0, 0.5) 35%, 
-        rgba(0,0,0,0.5) 50%, 
-        rgba(0,0,0,0.5) 100%), url('/images/hero2.png');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        height: 100%;
+        z-index: 2;
+        background-color: #0016204f;
     }
 
-    h2 {
-        margin-bottom: 12px;
+    .carousel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+    }
+
+    div.image {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        background-color: currentColor;
+
+        display: flex;
+        overflow: hidden;
+    }
+
+    div.image img {
+        width: 100%;
+        object-fit: cover;
+
+        transition: transform 850ms ease-out;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        top: calc(50% - 25px);
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: #12121252;
+        color: #f4f4f4;
+        font-size: 34px;
+        font-weight: bolder;
+        transition: all 250ms linear;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    button:first-child {
+        left: 0;
+    }
+
+    button:last-child {
+        right: 0;
+    }
+
+    button:hover {
+        background-color: #121212a6;
     }
 
     @media (max-width: 768px) {
-        h2 {
-            text-align: center;
+        button {
             font-size: 18px;
+            height: 30px;
+            width: 30px;
         }
     }
 </style>
+
+<script>
+    const left = document.querySelectorAll("button").item(0) as HTMLButtonElement;
+    const right = document.querySelectorAll("button").item(1) as HTMLButtonElement;
+    const images = document.querySelectorAll(".image img") as NodeListOf<HTMLImageElement>;
+
+    const myDiv = document.querySelector(".image") as HTMLDivElement;
+
+    let imgWidth = myDiv.clientWidth;
+    let x = 0;
+
+    window.onresize = function () {
+    imgWidth = myDiv.clientWidth;
+    x = 0;
+    images.forEach(img => img.style.transform = `translateX(0px)`);
+    };
+
+    right.onclick = function () {
+    if (-x < imgWidth * (images.length - 1)) {
+        x -= imgWidth;
+    } else {
+        x = 0;
+    }
+    images.forEach(img => img.style.transform = `translateX(${x}px)`);
+    };
+
+    left.onclick = function () {
+    if (x < 0) {
+        x += imgWidth;
+    } else {
+        x = -(imgWidth * (images.length - 1));
+    }
+    images.forEach(img => img.style.transform = `translateX(${x}px)`);
+    };
+</script>
