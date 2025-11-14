@@ -10,8 +10,12 @@ import Container from "../components/Container.astro";
                 <h2>Curso de <br> <span>Leitura dinâmica</span></h2>
                 <span class="linha"></span>
                 <img src="/images/Icons/unlock.svg" alt="">
+                <p>
+                    Domine estratégias comprovadas para ler com velocidade, clareza e concentração.
+                    Amplie sua produtividade e transforme sua forma de estudar e aprender.
+                </p>
             </div>
-            <div class="teste">
+            <div class="alert">
                 <img src="/images/Icons/teste.svg" alt=""> <strong>Aproveite o nosso <br> <i>conteúdo!</i></strong>
             </div>
         </Container>
@@ -19,11 +23,19 @@ import Container from "../components/Container.astro";
 </section>
 
 <style>
-    .teste {
+    p {
+        margin-bottom: 64px;
+        font-size: 16px;
+        color: rgb(23, 36, 48);
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+    .alert {
         position: absolute;
         right: 0;
         bottom: 0;
         background-color: rgb(21, 69, 131);
+        color: white;
         width: 40vw;
         height: 10vh;
         border-top: 4px solid rgb(23, 36, 48);
@@ -34,7 +46,7 @@ import Container from "../components/Container.astro";
         font-size: 22px;
         letter-spacing: 1px;
     }
-    .teste img {
+    .alert img {
         height: 35px;
         width: 35px;
         margin-right: 8px;
@@ -54,7 +66,6 @@ import Container from "../components/Container.astro";
 
         display: flex;
         align-items: center;
-        color: rgb(243, 247, 255);
         position: relative;
 
         border-bottom: 5px solid #0E2A18;
@@ -75,7 +86,7 @@ import Container from "../components/Container.astro";
         margin-bottom: 22px;
         text-wrap: nowrap;
         font-weight: normal;
-        text-shadow: 2px 2px 22px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 22px rgba(0, 0, 0, 0.5);
         color: rgb(23, 36, 48);
         font-weight: bold;
     }
@@ -94,16 +105,17 @@ import Container from "../components/Container.astro";
         height: 38px;
         max-width: 38px;
         background-color: #67e698;
-        border-radius: 50%;
         position: absolute;
-        bottom: 0.2vh;
-        left: 45%;
+        bottom: 14vh;
+        left: 48%;
+        box-shadow: rgba(0, 0, 0, 0.315) 0px 0px 10px 2px;
     }
 
     .informacoes-hero .linha {
         width: 100%;
         border-bottom: 4px solid #0E2A18;
         margin-top: 32px;
+        margin-bottom: 32px;
     }
 
     .hero .img {
@@ -114,8 +126,13 @@ import Container from "../components/Container.astro";
     }
 
     @media (max-width: 768px) {
+        p {
+            display: none;
+        }
+
         .hero {
             padding: 0 2.8vw;
+            height: 45vh;
             align-items: end;
 
             border-bottom: 4px solid #0E2A18;
@@ -126,22 +143,32 @@ import Container from "../components/Container.astro";
         }
         .informacoes-hero h2 {
             font-size: 22px;
+            margin-bottom: 0;
         }
 
         .informacoes-hero img{
             padding: 4px;
             height: 25px;
             max-width: 25px;
-            bottom: 0.8vh;
-            left: 41%;
+            bottom: 5.5vh;
+            left: 42%;
         }
         .informacoes-hero .linha {
             border-bottom: 2px solid #0E2A18;
             margin-top: 22px;
         }
 
-        .teste {
-            display: none;
+        .alert {
+            top: 0;
+            width: 50vw;
+            border-top: none;
+            border-bottom: 4px solid rgb(23, 36, 48);
+            font-size: 12px;
+            text-wrap: nowrap;
+        }
+        .alert img {
+            width: 25px;
+            height: 25px;
         }
     }
 </style>
