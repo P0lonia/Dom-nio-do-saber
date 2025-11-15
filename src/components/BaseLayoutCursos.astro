@@ -1,0 +1,26 @@
+---
+import '../styles/global.css'
+const { children, nomeDoCurso = ''} = Astro.props;
+---
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+		<title>Domínio do Saber | {nomeDoCurso}</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<main>
+            <slot />
+        </main>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="../utils/main.js"></script>
+	</body>
+</html>

@@ -1,12 +1,14 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayoutCursos from "../../components/BaseLayoutCursos.astro";
+import CursoLeitura from "../../layouts/CursoLeitura.astro";
 import Footer from "../../layouts/Footer.astro";
 import Header from "../../layouts/Header.astro";
 import HeroLeitura from "../../layouts/HeroLeitura.astro";
 ---
 
-<BaseLayout>
+<BaseLayoutCursos nomeDoCurso="Leitura Dinâmica">
     <Header />
     <HeroLeitura />
+    <CursoLeitura />
     <Footer />
-</BaseLayout>
+</BaseLayoutCursos>
